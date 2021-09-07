@@ -10,14 +10,18 @@ namespace tempProject
     {
         static void Main(string[] args)
         {
+            Starter();
+        }
+
+        static void Starter()
+        {
             Manager myManager = new Manager();
 
             myManager.mgaTest();
             Console.WriteLine(myManager.mgaSum());
             Console.ReadKey();
+
+
         }
-
-
-
     }
 }

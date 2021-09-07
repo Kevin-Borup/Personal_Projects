@@ -10,9 +10,22 @@ namespace Brainstorming
     {
         static void Main(string[] args)
         {
-            string drive = "C";
-            Console.WriteLine("Win32_LogicalDisk.DeviceID=\"" + drive + ":\"");
-            Console.WriteLine($@"Win32_LogicalDisk.DeviceID=""{drive}:""");
+
+            Person Jacob = new Person();
+
+            Jacob.job.Add(new Doctor());
+
         }
+    }
+
+    class Person
+    {
+        public List<object> job = new List<object>();
+
+    }
+
+    class Doctor
+    {
+        public bool education;
     }
 }
