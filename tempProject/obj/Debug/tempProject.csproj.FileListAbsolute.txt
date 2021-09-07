@@ -1,0 +1,7 @@
+C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\tempProject\bin\Debug\tempProject.exe.config
+C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\tempProject\bin\Debug\tempProject.exe
+C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\tempProject\bin\Debug\tempProject.pdb
+C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\tempProject\obj\Debug\tempProject.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\tempProject\obj\Debug\tempProject.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\tempProject\obj\Debug\tempProject.exe
+C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\tempProject\obj\Debug\tempProject.pdb
