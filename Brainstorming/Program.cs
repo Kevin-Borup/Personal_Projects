@@ -10,11 +10,103 @@ namespace Brainstorming
     {
         static void Main(string[] args)
         {
+            //inputMethod1();
+            inputMethod2();
+        }
+        static void inputMethod1()
+        {
+            string input = string.Empty;
 
-            Person Jacob = new Person();
+            Console.WriteLine("Type to write...");
+            while (true)
+            {
+                string line = Console.ReadLine();
+                if (line.Equals("END")) break; else input += line + "\n";
+            }
 
-            Jacob.job.Add(new Doctor());
 
+            Console.WriteLine("");
+            Console.WriteLine(input);
+        }
+        static void inputMethod2()
+        {
+
+            string doctor = "Lars Hansen";
+            string description;
+            Console.WriteLine("Type to write...");
+            //description = Format1(doctor);
+            //description = Format2(doctor);
+            description = Format3(doctor);
+            //description = Format4(doctor);
+            //description = Format5(doctor);
+            Console.WriteLine("");
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine("");
+            Console.WriteLine(description);
+
+            
+            string Format1(string doctorName)
+            {
+                string todayDateFormat = DateTime.Now.ToString("yyyy/MM/dd HH:mm");
+
+                Console.WriteLine($"{todayDateFormat} - {doctorName}:");
+                string input = UserInput("\t");
+
+                return input;
+            }
+            string Format2(string doctorName)
+            {
+                string todayDateFormat = DateTime.Now.ToString("yyyy/MM/dd '-' HH:mm");
+
+                Console.WriteLine($"{todayDateFormat}");
+                Console.WriteLine($"\t{doctorName}:");
+
+                string input = UserInput("\t\t");
+
+                return input;
+            }
+            string Format3(string doctorName)
+            {
+                string todayDateFormat = DateTime.Now.ToString("yyyy/MM/dd");
+                string todayTimeFormat = DateTime.Now.ToString("HH:mm");
+
+                Console.WriteLine($"{todayDateFormat} | {todayTimeFormat} | {doctorName} |");
+                string input = UserInput("\t");
+
+                return input;
+            }
+            string Format4(string doctorName)
+            {
+                string todayDateFormat = DateTime.Now.ToString("yyyy/MM/dd:\n\tHH:mm");
+
+                Console.WriteLine($"{todayDateFormat} - {doctorName}:");
+                string input = UserInput("\t");
+
+                return input;
+            }
+            string Format5(string doctorName)
+            {
+                string todayDateFormat = DateTime.Now.ToString("yyyy/MM/dd");
+                string todayTimeFormat = DateTime.Now.ToString("HH:mm");
+
+                Console.WriteLine($"{todayDateFormat}:");
+                Console.WriteLine($"\t{doctorName} ({todayTimeFormat}):");
+                string input = UserInput("\t");
+
+                return input;
+            }
+
+            string UserInput(string tabs)
+            {
+                string textBlock = string.Empty;
+                while (true)
+                {
+                    Console.Write(tabs);
+                    string line = Console.ReadLine();
+                    if (line.Equals("END")) break; else textBlock += tabs + line + "\n";
+                }
+                return textBlock;
+            }
         }
     }
 
