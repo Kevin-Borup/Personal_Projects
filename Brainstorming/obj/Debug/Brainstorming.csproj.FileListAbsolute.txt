@@ -5,3 +5,10 @@ C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\Brainstorming\obj\De
 C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\Brainstorming\obj\Debug\Brainstorming.csproj.CoreCompileInputs.cache
 C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\Brainstorming\obj\Debug\Brainstorming.exe
 C:\ZBC Data-Kommunikation\Personal_Project\Personal_Project\Brainstorming\obj\Debug\Brainstorming.pdb
+C:\ZBC Data-Kommunikation\Personal_Project\Brainstorming\bin\Debug\Brainstorming.exe.config
+C:\ZBC Data-Kommunikation\Personal_Project\Brainstorming\bin\Debug\Brainstorming.exe
+C:\ZBC Data-Kommunikation\Personal_Project\Brainstorming\bin\Debug\Brainstorming.pdb
+C:\ZBC Data-Kommunikation\Personal_Project\Brainstorming\obj\Debug\Brainstorming.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\Personal_Project\Brainstorming\obj\Debug\Brainstorming.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\Personal_Project\Brainstorming\obj\Debug\Brainstorming.exe
+C:\ZBC Data-Kommunikation\Personal_Project\Brainstorming\obj\Debug\Brainstorming.pdb

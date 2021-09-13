@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Brainstorming
 {
@@ -11,7 +12,16 @@ namespace Brainstorming
         static void Main(string[] args)
         {
             //inputMethod1();
-            inputMethod2();
+            //inputMethod2();
+            string folder = "HealthClinic";
+            string file = "patient";
+            Directory.CreateDirectory(folder);
+            FileStream patientFile = new FileStream($"{folder}\\{file}.txt", FileMode.CreateNew);
+            StreamWriter writer = new StreamWriter(patientFile);
+
+            writer.WriteLine("Hej");
+
+            writer.Close();
         }
         static void inputMethod1()
         {
@@ -34,11 +44,11 @@ namespace Brainstorming
             string doctor = "Lars Hansen";
             string description;
             Console.WriteLine("Type to write...");
-            //description = Format1(doctor);
-            //description = Format2(doctor);
+            description = Format1(doctor);
+            description = Format2(doctor);
             description = Format3(doctor);
-            //description = Format4(doctor);
-            //description = Format5(doctor);
+            description = Format4(doctor);
+            description = Format5(doctor);
             Console.WriteLine("");
             Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine("");
@@ -67,8 +77,9 @@ namespace Brainstorming
             }
             string Format3(string doctorName)
             {
-                string todayDateFormat = DateTime.Now.ToString("yyyy/MM/dd");
-                string todayTimeFormat = DateTime.Now.ToString("HH:mm");
+                DateTime thisTime = DateTime.Now;
+                string todayDateFormat = thisTime.ToString("yyyy/MM/dd");
+                string todayTimeFormat = thisTime.ToString("HH:mm");
 
                 Console.WriteLine($"{todayDateFormat} | {todayTimeFormat} | {doctorName} |");
                 string input = UserInput("\t");
