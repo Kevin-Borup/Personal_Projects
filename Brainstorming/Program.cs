@@ -13,6 +13,26 @@ namespace Brainstorming
         {
             //inputMethod1();
             //inputMethod2();
+            string birthDate = "19121999";
+            DateTime today = DateTime.Today;
+            DateTime birthDateTime = DateTime.ParseExact(birthDate, "ddMMyyyy", null);
+
+            int daysInBetween = -(today.DayOfYear - birthDateTime.DayOfYear);
+
+            string years = (today.Year - 1 - birthDateTime.Year).ToString();
+            string days = (365 - daysInBetween).ToString();
+
+            string[] age = new string[2];
+            age[0] = years;
+            age[1] = days;
+
+            Console.WriteLine("Years: " + years);
+            Console.WriteLine("Days: " + days);
+            Console.WriteLine($"Age: {years} Years & {days} Days");
+            // Correct result = 21 Years & 268 Days
+
+
+            /*
             string folder = "HealthClinic";
             string file = "patient";
             Directory.CreateDirectory(folder);
@@ -22,6 +42,7 @@ namespace Brainstorming
             writer.WriteLine("Hej");
 
             writer.Close();
+            */
         }
         static void inputMethod1()
         {
@@ -54,7 +75,7 @@ namespace Brainstorming
             Console.WriteLine("");
             Console.WriteLine(description);
 
-            
+
             string Format1(string doctorName)
             {
                 string todayDateFormat = DateTime.Now.ToString("yyyy/MM/dd HH:mm");
