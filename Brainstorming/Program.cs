@@ -191,7 +191,6 @@ namespace Brainstorming
     class Person
     {
         public List<object> job = new List<object>();
-
     }
 
     class Doctor
@@ -222,8 +221,6 @@ namespace Brainstorming
 
         [DllImport("kernel32.dll", ExactSpelling = true)]
         private static extern IntPtr GetConsoleWindow();
-
-
 
         /// <summary>
         /// Makes it so you cannot resize or maximize it
