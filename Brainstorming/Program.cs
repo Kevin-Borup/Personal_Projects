@@ -13,7 +13,18 @@ namespace Brainstorming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(typeof(int).Name);
+            string content1 = "Slutrengøring";
+            string content2 = "Badeland Voksen";
+            string content3 = "Sengelinned";
+            string content4 = "Cykelleje";
+
+            Console.WriteLine(System.Text.ASCIIEncoding.Unicode.GetByteCount(content1));
+            Console.WriteLine(System.Text.ASCIIEncoding.Unicode.GetByteCount(content2));
+            Console.WriteLine(System.Text.ASCIIEncoding.Unicode.GetByteCount(content3));
+            Console.WriteLine(System.Text.ASCIIEncoding.Unicode.GetByteCount(content4));
+
+
+            //Console.WriteLine(typeof(int).Name);
 
             /*
             DateTime today = DateTime.Now;
