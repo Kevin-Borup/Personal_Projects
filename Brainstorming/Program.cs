@@ -13,10 +13,10 @@ namespace Brainstorming
     {
         static void Main(string[] args)
         {
-            string content1 = "Slutrengøring";
-            string content2 = "Badeland Voksen";
-            string content3 = "Sengelinned";
-            string content4 = "Cykelleje";
+            string content1 = "SpringTicket";
+            string content2 = "SummerTicket";
+            string content3 = "FallTicket";
+            string content4 = "WinterTicket";
 
             Console.WriteLine(System.Text.ASCIIEncoding.Unicode.GetByteCount(content1));
             Console.WriteLine(System.Text.ASCIIEncoding.Unicode.GetByteCount(content2));
